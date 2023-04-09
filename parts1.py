@@ -20,11 +20,11 @@ class TopFrame(ttk.LabelFrame):
 
         diamondImage1 = Image.open("./diamond.png")
         self.diamondPhoto1 = ImageTk.PhotoImage(diamondImage1)
-        self.canvas.create_image(175,5,image=self.diamondPhoto1,anchor='nw')
+        self.canvas.create_image(180,5,image=self.diamondPhoto1,anchor='nw')
 
         atomImage1 = Image.open("./atom.png")
         self.atomPhoto1 = ImageTk.PhotoImage(atomImage1)
-        self.canvas.create_image(280,5,image=self.atomPhoto1,anchor='nw')
+        self.canvas.create_image(300,5,image=self.atomPhoto1,anchor='nw')
 
         #created ttk.scrollbar of tkinter in canvas
         self.scrollbar = ttk.Scrollbar(self, orient='horizontal', command=self.canvas.xview)
